@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
                 // child: const Text('Container 1'),
               ),
               const SizedBox(width: 30.0),
-              Container(
+              SizedBox(
                 width: 100.0,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
