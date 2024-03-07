@@ -13,42 +13,100 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Container(
-                // height: 100.0,
-                width: 100.0,
-                color: Colors.red,
-                // child: const Text('Container 1'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/profile.jpeg'),
               ),
-              const SizedBox(width: 30.0),
-              SizedBox(
-                width: 100.0,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: 100.0,
-                      width: 100.0,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      height: 100.0,
-                      width: 100.0,
-                      color: Colors.green,
-                    ),
-                  ],
+              Text(
+                'Muhammad Mubashir',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    fontFamily: 'Pacifico'),
+              ),
+              Text(
+                'Front-End Developer',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    fontFamily: 'SourceSans3'),
+              ),
+              // Container
+              Card(
+                color: Colors.white,
+                // padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                // child: Row(
+                //   children: [
+                //     Icon(
+                //       Icons.email,
+                //       color: Colors.teal.shade900,
+                //     ),
+                //     SizedBox(
+                //       width: 10.0,
+                //     ),
+                //     Text(
+                //       'muhammad.mubashir2498@gmail.com',
+                //       style: TextStyle(
+                //           color: Colors.teal.shade900,
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 15.0,
+                //           fontFamily: 'SourceSans3'),
+                //     )
+                //   ],
+                // ),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal.shade900),
+                  title: Text(
+                    'muhammad.mubashir2498@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        fontFamily: 'SourceSans3'),
+                  ),
                 ),
-                // color: Colors.blue,
-                // child: const Text('Container 2'),
               ),
-              const SizedBox(width: 30.0),
-              Container(
-                width: 100.0,
-                color: Colors.blue,
-                // child: const Text('Container 3'),
+              // Container
+              Card(
+                color: Colors.white,
+                // padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                // child: Row(
+                //   children: [
+                //     Icon(
+                //       Icons.phone,
+                //       color: Colors.teal.shade900,
+                //     ),
+                //     SizedBox(
+                //       width: 10.0,
+                //     ),
+                //     Text(
+                //       '+92 331 7525536',
+                //       style: TextStyle(
+                //           color: Colors.teal.shade900,
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 15.0,
+                //           fontFamily: 'SourceSans3'),
+                //     )
+                //   ],
+                // ),
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.teal.shade900),
+                  title: Text(
+                    '+92 331 7525536',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        fontFamily: 'SourceSans3'),
+                  ),
+                ),
               ),
             ],
           ),
