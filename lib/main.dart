@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/profile.jpeg'),
               ),
-              Text(
+              const Text(
                 'Muhammad Mubashir',
                 style: TextStyle(
                     color: Colors.white,
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                     fontSize: 16.0,
                     fontFamily: 'Pacifico'),
               ),
-              Text(
+              const Text(
                 'Front-End Developer',
                 style: TextStyle(
                     color: Colors.white,
@@ -40,7 +40,8 @@ class MyApp extends StatelessWidget {
               Card(
                 color: Colors.white,
                 // padding: EdgeInsets.all(20.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
                 // child: Row(
                 //   children: [
                 //     Icon(
@@ -76,7 +77,8 @@ class MyApp extends StatelessWidget {
               Card(
                 color: Colors.white,
                 // padding: EdgeInsets.all(20.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
                 // child: Row(
                 //   children: [
                 //     Icon(
@@ -112,6 +114,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
